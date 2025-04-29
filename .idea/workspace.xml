@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45fdc81b-5bae-4ed9-b210-ff5d4265f398" name="Changes" comment="Block created">
-      <change afterPath="$PROJECT_DIR$/src/Blockchain.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blockchain.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blockchain.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blockchain.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blockchain.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/blockchain.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745910190191</updated>
-      <workItem from="1745910191501" duration="2790000" />
+      <workItem from="1745910191501" duration="6018000" />
     </task>
     <task id="LOCAL-00001" summary="Block created">
       <option name="closed" value="true" />
@@ -96,6 +96,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Block created" />
