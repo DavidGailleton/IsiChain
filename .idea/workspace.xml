@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45fdc81b-5bae-4ed9-b210-ff5d4265f398" name="Changes" comment="Block created">
+      <change afterPath="$PROJECT_DIR$/src/class/P2PServer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class/Transaction.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/Block.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/class/Block.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +28,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "DavidGailleton"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/DavidGailleton/IsiChain.git",
+    "accountId": "3ff78ddf-7d15-41a6-803a-48288e6f7ced"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 1
 }]]></component>
@@ -39,7 +54,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,8 +67,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="\\wsl.localhost\Ubuntu-24.04\home\david\dev\isichain\src\tests\class" />
       <recent name="\\wsl.localhost\Ubuntu-24.04\home\david\dev\isichain\src\class" />
+      <recent name="\\wsl.localhost\Ubuntu-24.04\home\david\dev\isichain\src\tests\class" />
     </key>
   </component>
   <component name="RunManager">
@@ -88,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745910190191</updated>
-      <workItem from="1745910191501" duration="7804000" />
+      <workItem from="1745910191501" duration="18638000" />
     </task>
     <task id="LOCAL-00001" summary="Block created">
       <option name="closed" value="true" />

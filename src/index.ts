@@ -1,12 +1,18 @@
 import Blockchain from "./class/Blockchain";
 import express from 'express';
+import bodyParser from 'body-parser';
 import Block from "./class/Block";
+import P2PServer from "./class/P2PServer";
 
 const blockchain = new Blockchain();
+const p2pServer = new P2PServer(blockchain);
+const DIFFICULTY = 4
 
 const app = express();
+const HTTP_PORT = process.env.HTTP_PORT || 3000;
 
-const PORT = 3000;
+// Use middleware to parse JSON body
+app.use(bodyParser.json());
 
 app.get("/blocks", (request, response) => {
     response.status(200).send(JSON.stringify(blockchain.chain));
@@ -14,17 +20,33 @@ app.get("/blocks", (request, response) => {
 
 app.post("/mine", (request, response) => {
     try {
-        Block.mineBlock(blockchain.chain[blockchain.chain.length - 1], request.body || "");
-        response.status(201).json({ message: "Block mined successfully" });
-    } catch (e) {
-        response.status(400)
-        throw e;
-    }
-})
+        const newBlock = Block.mineBlock(
+            blockchain.chain[blockchain.chain.length - 1],
+            request.body || "",
+            1
+        );
 
-app.listen(PORT, () => {
-    console.log("Server running at PORT: ", PORT);
+        blockchain.addBlock(newBlock);
+
+        // Sync the blockchain with other peers after mining a new block
+        p2pServer.syncChain();
+
+        response.status(201).json({
+            message: "Block mined successfully",
+            block: newBlock
+        });
+    } catch (e) {
+        console.log(e)
+        response.status(400).json({ error: e });
+    }
+});
+
+app.listen(HTTP_PORT, () => {
+    console.log(`HTTP Server running at PORT: ${HTTP_PORT}`);
 }).on("error", (error) => {
     // gracefully handle error
     throw new Error(error.message);
 });
+
+// Start the P2P server
+p2pServer.listen();
