@@ -1,0 +1,20 @@
+{
+  "name": "isichain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "nodemon": "^3.1.10",
+    "ts-jest": "^29.3.2",
+    "typescript": "^5.5.3"
+  },
+  "private": true,
+  "dependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "crypto-js": "^4.2.0"
+  }
+}
