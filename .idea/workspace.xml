@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="45fdc81b-5bae-4ed9-b210-ff5d4265f398" name="Changes" comment="Block created">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blockchain.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blockchain.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blockchain.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/blockchain.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +50,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl.localhost\Ubuntu-24.04\home\david\dev\isichain\src\tests\class" />
+      <recent name="\\wsl.localhost\Ubuntu-24.04\home\david\dev\isichain\src\class" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Block" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
@@ -81,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745910190191</updated>
-      <workItem from="1745910191501" duration="6018000" />
+      <workItem from="1745910191501" duration="7804000" />
     </task>
     <task id="LOCAL-00001" summary="Block created">
       <option name="closed" value="true" />
