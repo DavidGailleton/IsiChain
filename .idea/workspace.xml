@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45fdc81b-5bae-4ed9-b210-ff5d4265f398" name="Changes" comment="Block created">
-      <change afterPath="$PROJECT_DIR$/src/class/P2PServer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/class/Transaction.ts" afterDir="false" />
+    <list default="true" id="45fdc81b-5bae-4ed9-b210-ff5d4265f398" name="Changes" comment="P2P Server">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/class/Block.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/class/Block.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/class/block.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/class/block.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/class/blockchain.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/class/blockchain.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,21 +25,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "DavidGailleton"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DavidGailleton&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/DavidGailleton/IsiChain.git",
-    "accountId": "3ff78ddf-7d15-41a6-803a-48288e6f7ced"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/DavidGailleton/IsiChain.git&quot;,
+    &quot;accountId&quot;: &quot;3ff78ddf-7d15-41a6-803a-48288e6f7ced&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2wOQYkVqzZoEFDLMvmiCS6EfNmE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -59,14 +59,17 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs.jest.jest_package": "",
+    "nodejs.jest.jest_package": "//wsl.localhost/Ubuntu-24.04/home/david/dev/isichain/node_modules/jest",
     "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "web-ide.project.structure",
     "ts.external.directory.path": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\david\\dev\\isichain\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl.localhost\Ubuntu-24.04\home\david\dev\isichain" />
       <recent name="\\wsl.localhost\Ubuntu-24.04\home\david\dev\isichain\src\class" />
       <recent name="\\wsl.localhost\Ubuntu-24.04\home\david\dev\isichain\src\tests\class" />
     </key>
@@ -74,6 +77,7 @@
   <component name="RunManager">
     <configuration name="Block" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="SUITE" />
@@ -103,7 +107,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745910190191</updated>
-      <workItem from="1745910191501" duration="18638000" />
+      <workItem from="1745910191501" duration="18738000" />
+      <workItem from="1745997163207" duration="5765000" />
     </task>
     <task id="LOCAL-00001" summary="Block created">
       <option name="closed" value="true" />
@@ -113,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745912090123</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="P2P Server">
+      <option name="closed" value="true" />
+      <created>1745938952345</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745938952345</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +145,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Block created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Block created" />
+    <MESSAGE value="P2P Server" />
+    <option name="LAST_COMMIT_MESSAGE" value="P2P Server" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-import Block from '../../class/Block';
+import Block from '../../src/class/Block';
 
 describe("Block", () => {
     let data: string;
