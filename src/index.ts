@@ -20,10 +20,9 @@ app.get("/blocks", (request, response) => {
 
 app.post("/mine", (request, response) => {
     try {
-        const newBlock = Block.mineBlock(
+        const newBlock = Block.newMineBlock(
             blockchain.chain[blockchain.chain.length - 1],
-            request.body || "",
-            1
+            request.body || ""
         );
 
         blockchain.addBlock(newBlock);

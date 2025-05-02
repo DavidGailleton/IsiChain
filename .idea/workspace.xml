@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45fdc81b-5bae-4ed9-b210-ff5d4265f398" name="Changes" comment="P2P Server">
+      <change afterPath="$PROJECT_DIR$/src/class/transaction/Transaction.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/class/Block.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/class/Block.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/class/block.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/class/block.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/class/blockchain.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/class/blockchain.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +53,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
@@ -108,7 +109,8 @@
       <option name="presentableId" value="Default" />
       <updated>1745910190191</updated>
       <workItem from="1745910191501" duration="18738000" />
-      <workItem from="1745997163207" duration="5765000" />
+      <workItem from="1745997163207" duration="8200000" />
+      <workItem from="1746169077452" duration="2553000" />
     </task>
     <task id="LOCAL-00001" summary="Block created">
       <option name="closed" value="true" />

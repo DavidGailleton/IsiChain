@@ -6,7 +6,7 @@ class Block {
     public lastHash: string;
     public hash: string;
     public data: string;
-    public bits: string; // difficulty for mining
+    public bits: number;
     public nonce: number;
 
     constructor(timestamp: number, lastHash: string, hash: string, data: string, bits: number, nonce: number) {
@@ -32,14 +32,14 @@ class Block {
         return newBlock;
     }
 
-    static newMineBlock(lastBlock: Block, data: string) {
-        const hash256 = (data: any) => {
-            const hash1 = sha256(data)
-            const hash2 = sha256(hash1)
-            return hash2;
+    static newMineBlock(lastBlock: Block, data: string): Block {
+        const hash256 = (data: string): string => {
+            const hash1 = sha256(data);
+            const hash2 = sha256(hash1);
+            return hash2.toString();
         }
 
-        const bitsToTarget = (bits: number) => {
+        const bitsToTarget = (bits: number): bigint => {
             const exponent = bits >>> 24;
             const coefficient = bits & 0x00FFFFFF;
 
@@ -63,12 +63,27 @@ class Block {
         const lastBlockHash = lastBlock.hash;
         const timestamp = Date.now();
         const bits = lastBlock.bits;
-        const nonce = 0;
+        let nonce = 0;
 
-        const header = (lastBlockHash + timestamp + bits).toString();
+        // Include data in the header and create a proper header
+        const header = `${lastBlockHash}${timestamp}${bits}${data}${nonce}`;
 
-        while (0 !== 0) {
+        const target = formatTargetAsHex(bitsToTarget(bits));
 
+        while (true) { // Fixed infinite loop condition
+            // Include the full header with nonce in hash calculation
+            const currentHeader = `${lastBlockHash}${timestamp}${bits}${data}${nonce}`;
+            let blockHash = hash256(currentHeader);
+
+            if (blockHash < target) {
+                // Include data in the block
+                const block = new Block(timestamp, lastBlockHash, blockHash, data, bits, nonce);
+                console.log("hash: " + blockHash);
+                return block;
+            } else {
+                console.log(blockHash + " > " + target);
+                nonce++;
+            }
         }
     }
 }
